@@ -1,0 +1,10 @@
+(executable
+ (name dream_mail)
+ (public_name dream-mail)
+ (libraries
+    emile
+    lwt
+    lwt.unix
+    yojson
+ )
+ (preprocess (pps lwt_ppx ppx_yojson_conv)))
